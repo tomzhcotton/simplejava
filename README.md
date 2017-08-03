@@ -1,3 +1,7 @@
+# Note:
+copy from quinnliu/sampleGradleProject
+just for learning purpose
+
 # Sample Gradle Project
 
 This repo contains the basic files you need to build your Java code on 
