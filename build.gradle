@@ -1,7 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-version = "1.00.00"
+archivesBaseName = 'myApp'
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -25,12 +26,6 @@ dependencies {
     testCompile 'junit:junit:4.11'
 }
 
-jar {
-    manifest{
-        attributes ("Fw-Version" : "2.50.00", "${parent.manifestSectionName}")
-    }
-    baseName 'myApp'
-}
 test {
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
