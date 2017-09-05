@@ -1,6 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+version = "1.00.00"
+
 repositories {
     mavenCentral()
 }
@@ -24,6 +26,9 @@ dependencies {
 }
 
 jar {
+    manifest{
+        attributes ("Fw-Version" : "2.50.00", "${parent.manifestSectionName}")
+    }
     baseName 'myApp'
 }
 test {
