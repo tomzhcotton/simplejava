@@ -23,6 +23,9 @@ dependencies {
     testCompile 'junit:junit:4.11'
 }
 
+jar {
+    baseName 'myApp'
+}
 test {
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
